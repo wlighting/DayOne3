@@ -15,6 +15,7 @@
 		6E45A21D1CB2B5B30053BA40 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E45A21B1CB2B5B30053BA40 /* LaunchScreen.storyboard */; };
 		6E45A2281CB2B5B30053BA40 /* DayOne3Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E45A2271CB2B5B30053BA40 /* DayOne3Tests.m */; };
 		6E45A2331CB2B5B30053BA40 /* DayOne3UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E45A2321CB2B5B30053BA40 /* DayOne3UITests.m */; };
+		B37955FE630B2D998F57D29F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DB6680F54C4BAA4BE1BF867B /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5590270E054408D732E974BA /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		603C442F6A2A7228A69B7B3A /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		6E45A20A1CB2B5B30053BA40 /* DayOne3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DayOne3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E45A20E1CB2B5B30053BA40 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6E45A2101CB2B5B30053BA40 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +54,7 @@
 		6E45A22E1CB2B5B30053BA40 /* DayOne3UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DayOne3UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E45A2321CB2B5B30053BA40 /* DayOne3UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DayOne3UITests.m; sourceTree = "<group>"; };
 		6E45A2341CB2B5B30053BA40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB6680F54C4BAA4BE1BF867B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B37955FE630B2D998F57D29F /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +83,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2176A4D6EDAA5B6A50C0517F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DB6680F54C4BAA4BE1BF867B /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		6E45A2011CB2B5B30053BA40 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +98,8 @@
 				6E45A2261CB2B5B30053BA40 /* DayOne3Tests */,
 				6E45A2311CB2B5B30053BA40 /* DayOne3UITests */,
 				6E45A20B1CB2B5B30053BA40 /* Products */,
+				CE106CD97843EB324B31AF2F /* Pods */,
+				2176A4D6EDAA5B6A50C0517F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -140,6 +155,15 @@
 			path = DayOne3UITests;
 			sourceTree = "<group>";
 		};
+		CE106CD97843EB324B31AF2F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5590270E054408D732E974BA /* Pods.debug.xcconfig */,
+				603C442F6A2A7228A69B7B3A /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +171,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6E45A2371CB2B5B30053BA40 /* Build configuration list for PBXNativeTarget "DayOne3" */;
 			buildPhases = (
+				AD54EA0D923B2D3B89131626 /* Check Pods Manifest.lock */,
 				6E45A2061CB2B5B30053BA40 /* Sources */,
 				6E45A2071CB2B5B30053BA40 /* Frameworks */,
 				6E45A2081CB2B5B30053BA40 /* Resources */,
+				AD144092E0D70AFAA86CFD50 /* Embed Pods Frameworks */,
+				7E664D869159FB295A450DD1 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -264,6 +291,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7E664D869159FB295A450DD1 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AD144092E0D70AFAA86CFD50 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AD54EA0D923B2D3B89131626 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6E45A2061CB2B5B30053BA40 /* Sources */ = {
@@ -411,6 +486,7 @@
 		};
 		6E45A2381CB2B5B30053BA40 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5590270E054408D732E974BA /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = DayOne3/Info.plist;
@@ -422,6 +498,7 @@
 		};
 		6E45A2391CB2B5B30053BA40 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 603C442F6A2A7228A69B7B3A /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = DayOne3/Info.plist;
@@ -498,6 +575,7 @@
 				6E45A2391CB2B5B30053BA40 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6E45A23A1CB2B5B30053BA40 /* Build configuration list for PBXNativeTarget "DayOne3Tests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +584,7 @@
 				6E45A23C1CB2B5B30053BA40 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6E45A23D1CB2B5B30053BA40 /* Build configuration list for PBXNativeTarget "DayOne3UITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +593,7 @@
 				6E45A23F1CB2B5B30053BA40 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
